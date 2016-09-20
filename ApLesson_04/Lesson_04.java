@@ -5,6 +5,8 @@ public class Lesson_04
 	{
 		Scanner user_input = new Scanner(System.in);
 		Lesson_04 form = new Lesson_04();
+		
+		//variables
 		String item1;
 		double price1;
 		String item2;
@@ -13,6 +15,7 @@ public class Lesson_04
 		double price3;
 		double total;
 		double Subtotal;
+		
 			//get info
 			System.out.println("Please enter item 1:");
 			item1=user_input.next();
@@ -28,7 +31,8 @@ public class Lesson_04
 			price3=user_input.nextDouble();
 			Subtotal=price1+price2+price3;
 			total=Subtotal*1.08;
-				//print 
+				
+				//print info
 				System.out.println("<<<<<__Receipt__>>>>>");
 				form.format(item1,price1);
 				form.format(item2,price2);
