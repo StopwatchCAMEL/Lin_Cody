@@ -13,10 +13,6 @@ public class Lesson_04
 		double price3;
 		double total;
 		double Subtotal;
-		String s=("Subtotal");
-		String tax=("Tax");
-		String t=("Total");
-		double tx;
 			//get info
 			System.out.println("Please enter item 1:");
 			item1=user_input.next();
@@ -32,16 +28,15 @@ public class Lesson_04
 			price3=user_input.nextDouble();
 			Subtotal=price1+price2+price3;
 			total=Subtotal*1.08;
-			tx=1.09;
 				//print 
 				System.out.println("<<<<<__Receipt__>>>>>");
 				form.format(item1,price1);
 				form.format(item2,price2);
 				form.format(item3,price3);
 				System.out.println();
-				form.format(s,Subtotal);
-				form.format(tax,tx);
-				form.format(t,total);
+				form.format("Subtotal" ,Subtotal);
+				form.format("Tax", 1.08);
+				form.format("Total" ,total);
 	}	
 	//method
 	public void format(String word, double number)
