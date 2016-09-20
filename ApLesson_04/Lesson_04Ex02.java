@@ -28,7 +28,6 @@ public class Lesson_04Ex02
 			System.out.println("What is your subject?");
 			Subject = user_input.nextLine();
 			
-			
 				//print 
 				System.out.print("***********************");
 				form.format(School,year);
