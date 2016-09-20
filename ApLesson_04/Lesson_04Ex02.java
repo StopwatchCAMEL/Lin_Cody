@@ -33,7 +33,7 @@ public class Lesson_04Ex02
 				form.format(School,year);
 				form.format(name,Lname);
 				form.format(title,Subject);
-				System.out.println();
+			
 			
 	}	
 	//method
