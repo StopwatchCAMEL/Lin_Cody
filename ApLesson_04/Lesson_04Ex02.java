@@ -5,6 +5,8 @@ public class Lesson_04Ex02
 	{
 		Scanner user_input = new Scanner(System.in);
 		Lesson_04Ex02 form = new Lesson_04Ex02();
+		
+		//variables
 		String name;
 		String Lname;
 		String title;
@@ -28,8 +30,7 @@ public class Lesson_04Ex02
 			
 			
 				//print 
-				
-				System.out.println("***********");
+				System.out.print("***********************");
 				form.format(School,year);
 				form.format(name,Lname);
 				form.format(title,Subject);
