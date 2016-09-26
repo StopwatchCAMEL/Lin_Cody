@@ -23,8 +23,10 @@ public class Calculator
 			total = (2*num1*num3+2*num1*num2+2*num2*num3);
 			System.out.println("The surface area of your rectangle is" );
 			System.out.println(total);
+			
 			//Multiplication
 				System.out.println(num1 + " and " + num2 + " would produce " + num1*num2);
+					
 					//Concatenation
 					System.out.println("What is your name? ");
 					name = user_input.next();
@@ -36,9 +38,9 @@ public class Calculator
 					city = user_input.next();
 					System.out.println("What is your zipcode?");
 					zipcode = user_input.nextInt();
-					System.out.print("Your name is. " + name);
-					System.out.println(" You live at");
-					System.out.print(housenum + " " + street + " " + city + " " + zipcode);
+					System.out.println( name);
+					System.out.println(housenum + " " + street); 
+					System.out.println(city + " " + zipcode);
 				
 	}
 }
