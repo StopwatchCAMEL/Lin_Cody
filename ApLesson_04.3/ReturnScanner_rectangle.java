@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Scanner_rectangle
+public class ReturnScanner_rectangle
 {	
 	static double width;
 	static double length;
@@ -14,21 +14,20 @@ public class Scanner_rectangle
 			width = user_input.nextInt();
 			System.out.println("What is the length of your rectangle?");
 			length = user_input.nextInt();
-			calcPerim();
 			format();
 
 			
 	}	
 	//method
-	public static void calcPerim()
+	public static double perimeter()
 	{
-		perimeter=((2*length)+(2*width));
+		return((2*length)+(2*width));
 	}
 		
 		//method
 		public static void format()
 		{
-			System.out.printf("The perimeter is %.5f\n", perimeter);
+			System.out.printf("The perimeter is %.5f\n", perimeter());
 		}
 
 }

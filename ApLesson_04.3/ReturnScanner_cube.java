@@ -1,9 +1,9 @@
 import java.util.Scanner;
-public class Scanner_cube
+public class ReturnScanner_cube
 {	
 
 	static double side;
-	static double sa;
+	static double calcSurf;
 
 	public static void main(String[]args)
 	{
@@ -12,21 +12,20 @@ public class Scanner_cube
 			//get info
 			System.out.println("What is the side length of your cube?");
 			side = user_input.nextInt();
-			calcSurf();
 			format();
 
 			
 	}	
 	//method
-	public static void calcSurf()
+	public static double calcSurf()
 	{
-		sa=((side * side)*6);
+		return((side * side)*6);
 	}
 		
 		//method
 		public static void format()
 		{
-			System.out.printf("The surface area of a cube with the side lenghts of " + side + " is %.5f\n", sa);
+			System.out.printf("The surface area of a cube with the side lenghts of " + side + " is %.5f\n", calcSurf());
 		}
 
 }

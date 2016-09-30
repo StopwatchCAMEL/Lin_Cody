@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Scanner_average
+public class ReturnScanner_average
 {	
 	static double num1;
 	static double num2;
@@ -17,21 +17,20 @@ public class Scanner_average
 			num2 = user_input.nextInt();
 			System.out.println("What is your third number?");
 			num3 = user_input.nextInt();
-			calcAverage();
 			format();
 
 			
 	}	
 	//method
-	public static void calcAverage()
+	public static double average()
 	{
-		average=((num1+num2+num3)/3);
+		return((num1+num2+num3)/3);
 	}
 		
 		//method
 		public static void format()
 		{
-			System.out.printf("The average of " + num1 + " " + num2 + " and " + num3 + " is %.5f\n", average);
+			System.out.printf("The average of " + num1 + ", " + num2 + ", and " + num3 + " is %.5f\n", average());
 		}
 
 }

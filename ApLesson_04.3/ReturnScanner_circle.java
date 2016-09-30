@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Scanner_circle
+public class ReturnScanner_circle
 {	
 	static double area ;
 	static double radius;
@@ -11,21 +11,20 @@ public class Scanner_circle
 			//get info
 			System.out.println("What is the radius of your circle?");
 			radius = user_input.nextInt();
-			calcArea();
 			format();
 
 			
 	}	
 	//method
-	public static void calcArea()
+	public static double area()
 	{
-		area=((radius*radius)*3.14);
+		return((radius*radius)*3.14);
 	}
 		
 		//method
 		public static void format()
 		{
-			System.out.printf("The area of a circle with the radius of " + radius + " is %.5f\n", area);
+			System.out.printf("The area of a circle with the radius of " + radius + " is %.5f\n", area());
 		}
 
 }
