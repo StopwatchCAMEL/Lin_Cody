@@ -55,6 +55,8 @@ public class DiscountRecipt
 				format("Tax", tax);
 				format("Total" ,total);
 				format("Savings", dis);
+				System.out.println("______________________");
+				System.out.println("Thank you for shopping");
 	}	
 	//method
 	public static void format(String word, double number)
