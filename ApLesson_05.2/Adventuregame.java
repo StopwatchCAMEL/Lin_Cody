@@ -81,7 +81,7 @@ public class Adventuregame
 					else if(choice==2)
 					{
 						System.out.println("As you attempt to flee from the approaching invaders a stray arrow hits you in the knee");
-						System.out.println("You slowly bleed out as the penguin army sets fire to your once beatifuil kingdom");
+						System.out.println("You slowly bleed out as the penguin army sets fire to your once beautiful kingdom");
 					}
 				}
 			}

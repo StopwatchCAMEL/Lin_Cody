@@ -50,7 +50,8 @@ public class Gpacalc
 			return 1.0;
 		if(grade.equals("F"))
 			return 0.0;
-		else return 0.0;
+		else 
+			return 0.0;
 	}
 		
 }

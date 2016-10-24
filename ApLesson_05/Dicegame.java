@@ -1,11 +1,10 @@
-import java.util.Scanner;
+
 import java.util.Random;
 public class Dicegame
 {	
 
 	public static void main(String[]args)
-	{
-		Scanner user_input = new Scanner(System.in);	
+	{	
 		Random rand= new Random();
 		
 			//get info
