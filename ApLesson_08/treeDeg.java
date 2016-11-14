@@ -23,7 +23,7 @@ public class treeDeg
 	{
 		if (start <= stop)
 		{
-			System.out.println(word.substring(0, start));
+			System.out.printf("%10s\n", word.substring(0, start));
 			start++;
 			tree(word, stop, start);
 		}
