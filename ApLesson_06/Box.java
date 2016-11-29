@@ -10,9 +10,10 @@ public class Box
 				//info 
 				System.out.println("Please enter your word:");
 				String word=user_input.next();
+				System.out.println();
 				for (int count=1; count<=word.length(); count++)
 				{
-				System.out.print(word + " ");
+				System.out.println(word);
 				
 				}
 
