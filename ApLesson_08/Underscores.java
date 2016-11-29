@@ -9,11 +9,11 @@ public class Underscores
 		
 		System.out.println("Please enter a sentence");
 		sentence=user_input.nextLine();
-		System.out.println(replace());
+		System.out.println(replace(sentence));
 	
 	}
 	
-	public static void replace()
+	public static String replace(String sentence)
 	{
 		if (sentence.indexOf(" ")<0)
 		{
@@ -22,7 +22,7 @@ public class Underscores
 		else
 		{
 			sentence = sentence.substring(0, sentence.indexOf(" ")) + ("_")+ sentence.substring(sentence.indexOf(" ")+1);
-			replace();
+			return(replace(sentence));
 		}
 	}	
 }

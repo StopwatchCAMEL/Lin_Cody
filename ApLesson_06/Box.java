@@ -14,7 +14,6 @@ public class Box
 				for (int count=1; count<=word.length(); count++)
 				{
 				System.out.println(word);
-				
 				}
 
 	}	
