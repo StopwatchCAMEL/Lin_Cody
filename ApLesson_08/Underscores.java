@@ -1,14 +1,12 @@
 import java.util.Scanner ;
 public class Underscores
 {
-	static String sentence;
-
 	public static void main(String[]args)
 	{
 		Scanner user_input = new Scanner(System.in);
 		
 		System.out.println("Please enter a sentence");
-		sentence=user_input.nextLine();
+		String sentence=user_input.nextLine();
 		System.out.println(replace(sentence));
 	
 	}
