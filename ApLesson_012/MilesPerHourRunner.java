@@ -13,7 +13,7 @@ public class MilesPerHourRunner
 		
 		MilesPerHour object = new MilesPerHour(dist,hour,min);
 		
-		System.out.println(dist + " miles in " + hour + " hours and " + min + " minutes = " + object.getMPH()+ " mph");
+		System.out.println(object.getDistance() + " miles in " + object.getHours() + " hours and " + object.getMinutes() + " minutes = " + object.getMPH()+ " mph");
 		
 		System.out.println("Please enter a distance");
 		dist= user_input.nextInt();
@@ -22,7 +22,7 @@ public class MilesPerHourRunner
 		System.out.println("Please enter the amount of minutes");
 		min= user_input.nextInt();
 		object.setValues(dist,hour,min);
-		System.out.println(dist + " miles in " + hour + " hours and " + min + " minutes = " + object.getMPH()+ " mph");
+		System.out.println(object.getDistance() + " miles in " + object.getHours() + " hours and " + object.getMinutes() + " minutes = " + object.getMPH()+ " mph");
 	}
 }
 

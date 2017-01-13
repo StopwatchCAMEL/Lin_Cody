@@ -29,8 +29,23 @@ public class MilesPerHour
    }
    public double getMPH()
    {
-	   mph = Math.round(distance / (hours + minutes / 60.0));
+	   mph = Math.round(distance / (hours + (minutes / 60.0)));
 	   return mph; 
+   }
+   
+   public int getDistance()
+   {
+	   return distance;
+   }
+   
+   public int getHours()
+   {
+	   return hours;
+   }
+   
+   public int getMinutes()
+   {
+	   return minutes;
    }
 
 }
