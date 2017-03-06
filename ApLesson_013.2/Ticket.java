@@ -4,7 +4,7 @@ public abstract class Ticket
 	
 	public Ticket()
 	{
-		this.serialNo = (int) (Math.random()*10000000+1);	
+		serialNo = (int) (Math.random()*10000000+1);	
 	}
 	
 	public int getSerialNo()

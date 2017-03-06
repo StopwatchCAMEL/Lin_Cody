@@ -4,7 +4,6 @@ public class PC extends GameSystem
 	{
 		super();
 		
-		
 	}
 	
 	public PC(String p)

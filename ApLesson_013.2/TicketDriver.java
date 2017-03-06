@@ -2,10 +2,9 @@ public class TicketDriver
 {
 	public static void main(String[]args)
 	{
-
-		Advance a = new Advance(10);
-		StudentAdvance b = new StudentAdvance(10);
-		Walkup c = new Walkup();
+		Walkup a = new Walkup();
+		Advance b = new Advance(10);
+		StudentAdvance c = new StudentAdvance(10);
 		
 	
 		System.out.println(a);
