@@ -122,7 +122,7 @@ public class MagpiePt2
 		{
 			statement = statement.substring(0,statement.length()-1);
 		}
-		String goal =("I want to ");
+		String goal =("I want to");
 		int psn = findKeyword(statement, goal, 0);
 		String restOfStatement = statement.substring(psn+9);
 		return ("What would it mean to" + restOfStatement + "?");
