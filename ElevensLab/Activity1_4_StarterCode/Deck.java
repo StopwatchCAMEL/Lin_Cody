@@ -68,9 +68,16 @@ public class Deck {
 	 * Randomly permute the given collection of cards
 	 * and reset the size to represent the entire deck.
 	 */
-	public void shuffle() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-	}
+	 public void shuffle() {
+        /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+     for (int k = values.length -1; k > 0;k--)
+		{
+			int r = (int)(Math.random() * k);
+			int temp = values[r];
+			values[r] = values[k];
+			values [k] = temp;
+		}
+    }
 
 	/**
 	 * Deals a card from this deck.
@@ -92,33 +99,33 @@ public class Deck {
 	 * @return a string representation of this deck.
 	 */
 	@Override
-	public String toString() {
-		String rtn = "size = " + size + "\nUndealt cards: \n";
+	   public String toString() {
+        String rtn = "size = " + size + "\nUndealt cards: \n";
 
-		for (int k = size - 1; k >= 0; k--) {
-			rtn = rtn + cards.get(k);
-			if (k != 0) {
-				rtn = rtn + ", ";
-			}
-			if ((size - k) % 2 == 0) {
-				// Insert carriage returns so entire deck is visible on console.
-				rtn = rtn + "\n";
-			}
-		}
+        for (int k = size - 1; k >= 0; k--) {
+            rtn = rtn + cards.get(k);
+            if (k != 0) {
+                rtn = rtn + ", ";
+            }
+            if ((size - k) % 2 == 0) {
+                // Insert carriage returns so entire deck is visible on console.
+                rtn = rtn + "\n";
+            }
+        }
 
-		rtn = rtn + "\nDealt cards: \n";
-		for (int k = cards.size() - 1; k >= size; k--) {
-			rtn = rtn + cards.get(k);
-			if (k != size) {
-				rtn = rtn + ", ";
-			}
-			if ((k - cards.size()) % 2 == 0) {
-				// Insert carriage returns so entire deck is visible on console.
-				rtn = rtn + "\n";
-			}
-		}
+        rtn = rtn + "\nDealt cards: \n";
+        for (int k = cards.size() - 1; k >= size; k--) {
+            rtn = rtn + cards.get(k);
+            if (k != size) {
+                rtn = rtn + ", ";
+            }
+            if ((k - cards.size()) % 2 == 0) {
+                // Insert carriage returns so entire deck is visible on console.
+                rtn = rtn + "\n";
+            }
+        }
 
-		rtn = rtn + "\n";
-		return rtn;
-	}
+        rtn = rtn + "\n";
+        return rtn;
+    }
 }
