@@ -68,30 +68,31 @@ public class Deck {
 	 * Randomly permute the given collection of cards
 	 * and reset the size to represent the entire deck.
 	 */
-	 public void shuffle() {
-        /* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-     for (int k = values.length -1; k > 0;k--)
+	public void shuffle() 
+	{
+		for( int k = size - 1; k >= 0; k-- ) 
 		{
-			int r = (int)(Math.random() * k);
-			int temp = values[r];
-			values[r] = values[k];
-			values [k] = temp;
-		}
-    }
+            int r = (int)(Math.random() * k);
+            Card tmp = cards.get(r);
+            cards.set(r, cards.get(k));
+            cards.set(k, tmp);
+        }
+	}
 
 	/**
 	 * Deals a card from this deck.
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Card deal() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-		this.size = this.size - 1 ;
-		if (this.size > 0)
+	 public Card deal() 
+	 {
+		if (isEmpty()) 
 		{
-			return this.cards.get(this.size);
+			return null;
 		}
-		return null;
+	 size--;
+	 Card i = cards.get(size);
+	 return i;
 	}
 
 	/**

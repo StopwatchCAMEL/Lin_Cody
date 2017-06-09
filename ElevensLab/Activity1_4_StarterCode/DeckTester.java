@@ -34,5 +34,59 @@ public class DeckTester {
 	System.out.println(deck3.deal());
 	deck3.shuffle();
 	System.out.println(deck3);
-	}
+	
+	String[] R2 = new String[52];
+    String[] S2 = new String[52];
+    int[] pointValues2 = new int[52];
+		
+    for (int i = 0; i < 52; i++) 
+	{
+		String ranks = "";
+        String suit = "";
+        if ( (i+1) % 13 == 11 ) 
+		{
+			ranks = "Jack";
+        }
+        else if ( (i+1) % 13 == 12 ) 
+		{
+			ranks = "Queen";
+        }
+        else if ( (i+1) % 13 == 0 ) 
+		{
+			ranks = "King";
+        }
+        else if ( (i+1) % 13 == 1 ) 
+		{
+            ranks = "Ace";
+        }
+        else 
+	    {
+            ranks = Integer.toString((i + 1) % 13);
+        }
+            
+        if (i < 13) 
+		{
+            suit = "Hearts";
+        }
+        else if (i < 26) 
+		{
+            suit = "Diamonds";
+        }
+        else if (i < 39) 
+		{ 
+			suit = "Clubs";
+        }
+        else 
+		{
+            suit = "Spades";
+        }
+            
+        R2[i] = ranks;
+        S2[i] = suit;
+        pointValues2[i] = ((i+1) % 13);
+        }
+        
+        Deck x = new Deck(R2, S2, pointValues2);
+        System.out.println(x);
+    }
 }
